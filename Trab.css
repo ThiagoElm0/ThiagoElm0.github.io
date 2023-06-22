@@ -1,0 +1,244 @@
+body{
+    color:white;
+    font-family: 'Cinzel', serif;
+    background-color: rgb(21, 21, 21);  
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif; 
+}
+/*titulo*/
+.titulo{
+    text-align: center;
+    font-size: 3pc;
+    text-shadow: rgba(255, 0, 0, 0.9) 0px 0px 4px;
+    font-family: 'Cinzel', serif; 
+    color: white;
+}
+/*fim do titulo*/
+.fundo{
+    background-color: rgb(17, 17, 17);   
+}
+.sub_t{
+    color: red;
+}
+/*texto do site*/
+.conteiner_e{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    padding: 1.8vw;
+    margin-top: 2vw;
+    font-family: 'Cinzel', serif; 
+    float: left;
+    color: white;
+    text-align: justify;
+    display: inline-block;
+    width: 1200px;
+}
+.conteiner_d{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    padding: 1.8vw;
+    margin-top: 2vw;
+    font-family: 'Cinzel', serif;
+    float: right; 
+    color: white;
+    text-align: justify;
+    display: inline-block;
+    width: 1200px;
+}
+/*fim do texto*/
+/*menu*/
+.menu{
+    border-bottom:2px solid black;
+    float:left;
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    height: 4.5vw;
+
+}
+.btns{
+    float: right;
+    margin-right: 4vw;    
+}
+.menu li{
+    position:relative;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 1vw;
+}
+.menu li a{
+    margin-top: 0.5vw;
+    color:rgb(255, 255, 255); 
+    text-decoration:none; 
+    display:block;
+    border-radius: 10px;
+}
+.menu li a:hover{
+    background: rgb(10, 10, 10);
+    color:white;
+    border-radius: 5px;
+    color: red;
+    text-shadow: red;
+
+}
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    background-color:rgb(10, 10, 10);
+    color: white;
+    display:none;
+    border-radius: 10px;
+}
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+    padding: 0;
+}
+.menu li ul li{
+    width: 8vw;
+    padding: auto;
+}
+/*fim do menu*/
+/*simbolo do menu*/
+.menu a img{
+    height: 3vw;
+    width: 3vw;
+    margin-left: 4.5vw;
+    float: left;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.9)); 
+    filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.9));
+}
+/*fim do simbolo do menu*/
+/*slides*/
+
+.galery{
+    width: 450px;
+    height: 450px;
+    background-color: black;
+    overflow: hidden;
+    margin: auto;
+}
+.galery .fotos{
+    width: 500%;
+    animation-name: animação;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.galery .fotos img{
+    width: 19.9%;
+}
+/*animação*/
+@keyframes animação {
+    0% { margin-left: 0;}
+    15% { margin-left: 0;}
+    20% { margin-left: -133%;}
+    35% { margin-left: -133%;}
+    40% { margin-left: -266%;}
+    55% { margin-left: -266%;}
+    60% { margin-left: -400%;}
+    75% { margin-left: -400%;}
+    80% { margin-left: -500%;}
+    85% { margin-left: -500%;}
+    100% { margin-left: -600%;}
+}
+/*fim da animção*/
+/*fim dos slide*/
+/*abertura*/
+#opening-animation {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    opacity: 1;
+}
+
+.opening-content {
+    text-align: center;
+    color: white;
+}
+
+.opening-content img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    visibility: visible;
+}
+
+.fade-out {
+    animation: fade-out 1s ease forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/*fim da abertura*/
+.midia{
+    display: inline-flex;
+    width: 1000px;
+    margin: auto;
+}
+.midia iframe, .midia img{
+    margin: 15px;
+}
+.mais_info{
+    margin-top: 0.5vw;
+    color:rgb(255, 255, 255); 
+    text-decoration:none; 
+    display:block;
+    border-radius: 10px;
+}
+.mais_info:hover{
+    color:white;
+    border-radius: 5px;
+    color: red;
+    text-shadow: red;
+
+}
+.hidden-content {
+    display: none;
+}
+.button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 1vw;
+}
+.button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(226, 19, 19, 0.774);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 1vw;
+
+}
+.tit{
+    width:300px;
+    margin: auto;
+    font-size: x-large;
+    color:red;
+    margin-top: 1vw;
+}
+.map{
+    display: inline-flex;
+    float: left;
+    margin: 1vw;
+}
